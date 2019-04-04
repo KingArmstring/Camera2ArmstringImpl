@@ -2,6 +2,23 @@
 
 Using Camera2ArmstringImpl you can take an image with camera2 api using only 4 lines of code:
 
+##Adding dependencies:
+In project level build.gradle file add maven { url 'https://jitpack.io' } as the following
+```
+  allprojects {
+    repositories {
+        .
+        .
+        .
+        .
+        maven { url 'https://jitpack.io' }
+    }
+}  
+```
+In app level build.gradle file add:
+```
+implementation 'com.github.KingArmstring:Camera2ArmstringImpl:1.0'
+```
 1. Create activity for example CameraActivity
 2. Define an instance of the class PictureCameraImpl
 ```
