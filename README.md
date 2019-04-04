@@ -2,7 +2,7 @@
 
 Using Camera2ArmstringImpl you can take an image with camera2 api using only 4 lines of code:
 
-##Adding dependencies:
+<h2>Adding dependencies:</h2>
 In project level build.gradle file add maven { url 'https://jitpack.io' } as the following
 ```
   allprojects {
@@ -59,5 +59,5 @@ remember that filePath is the path of the image you will shot, if you want it to
     btnTakePicture.setOnClickListener((v) -> pictureCamera.takePicture());
 ```
 
-###Make sure not to forget adding the camera permission to the manifest and take it from the user programatically. If you don't know how to do that please check this link https://developer.android.com/training/permissions/requesting
+<h3>Make sure not to forget adding the camera permission to the manifest and take it from the user programatically. If you don't know how to do that please check this link https://developer.android.com/training/permissions/requesting</h3>
 
