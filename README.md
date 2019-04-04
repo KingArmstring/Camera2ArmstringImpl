@@ -1,4 +1,4 @@
-# Camera2ArmstringImpl
+# Camera2ArmstringImpl (Minimum Android API 21)
 
 Using Camera2ArmstringImpl you can take an image with camera2 api using only 4 lines of code:
 
