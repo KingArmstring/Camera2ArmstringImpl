@@ -67,7 +67,7 @@ public class PictureCameraImpl {
     private Handler mBackgroundHandler;
     private HandlerThread mBackgroundThread;
 
-    public PictureCameraImpl(Context context, TextureView textureView, String imageViewPath) {
+    PictureCameraImpl(Context context, TextureView textureView, String imageViewPath) {
         IMAGE_FILE_PATH = imageViewPath;
         mContext = context;
         this.textureView = textureView;
