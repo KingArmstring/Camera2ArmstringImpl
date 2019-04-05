@@ -1,2 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kingarmstring.armstringcamera2imple" />
+    package="com.kingarmstring.armstringcamera2imple" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+</manifest>

@@ -41,9 +41,12 @@ import java.util.List;
 public class PictureCameraImpl {
 
     private Context mContext;
-    private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
-    private static String IMAGE_FILE_PATH;
+    private String IMAGE_FILE_PATH;
+    private TextureView textureView;
 
+    private PictureCameraImpl instance;
+
+    private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);//moves
         ORIENTATIONS.append(Surface.ROTATION_90, 0);//moves
@@ -63,7 +66,6 @@ public class PictureCameraImpl {
     private boolean mFlashSupported;
     private Handler mBackgroundHandler;
     private HandlerThread mBackgroundThread;
-    private TextureView textureView;
 
     public PictureCameraImpl(Context context, TextureView textureView, String imageViewPath) {
         IMAGE_FILE_PATH = imageViewPath;
@@ -303,4 +305,5 @@ public class PictureCameraImpl {
             imageReader = null;
         }
     }
+
 }
