@@ -39,7 +39,7 @@ implementation 'com.github.KingArmstring:Camera2ArmstringImpl:1.0'
 ```
 5. Initialize the PictureCameraImple in the CameraActivity and start the camera in the <b>onCreate()</b>
 ```
-    pictureCamera = new new Camera2Builder()
+    pictureCamera = new Camera2Builder()
                 .setCameraConsumer(this)
                 .setCameraView(camera2View)
                 .setImageFileName("placeholder file name")
